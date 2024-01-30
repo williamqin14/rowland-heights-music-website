@@ -9,6 +9,7 @@ import { Open_Sans } from 'next/font/google'
 // components
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import GoogleAnalytics from '../components/GoogleAnalytics'
 
 
 const openSans = Open_Sans({ subsets: ['latin'] })
@@ -26,6 +27,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className}>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+            <GoogleAnalytics ga_id= 
+            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          ) : null}
         <Navbar/>
           {children}
         <Footer />
