@@ -11,13 +11,13 @@ export default class Blog extends Component {
         <Head>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
-        <article>
-          <h1>{title}</h1>
-          <HomeContent />
-          <ul>
+        <article className='container flex-col'>
+          <h1 className='font-bold'>{title}</h1>
+          <HomeContent/>
+          <ul className='pt-3'>
             {cats.map((cat, k) => (
-              <li key={k}>
-                <h2>{cat.name}</h2>
+              <li key={k} className='pb-3'>
+                <h3 className='p-0'>{cat.name}</h3>
                 <p>{cat.description}</p>
               </li>
             ))}

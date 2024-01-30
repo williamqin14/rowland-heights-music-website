@@ -1,66 +1,36 @@
 import Teacher from '../../components/Teacher.jsx'
-import { gql } from '@apollo/client'
-import { client } from '../../lib/Apollo'
 import Link from 'next/link'
-
-const GET_TEACHERS = gql`
-query NewQuery {
-  posts(where: {categoryName: "Teacher"}) {
-    nodes {
-      content(format: RAW)
-      teacher {
-        education
-        experience
-        instrument
-        profilePicture {
-          node {
-            sourceUrl
-          }
-        }
-      }
-      title
-    }
-  }
-}
-`
-export const dynamic = 'force-dynamic'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
 export default async function Teachers() {
-  // get teachers from database
-  let teachers = []
-  try {
-    // console.log('Before query:', client.cache.extract());
-
-    const { data } = await client.query({
-      query: GET_TEACHERS,
-      fetchPolicy: 'no-cache',
-    })
-    // console.log('After query:', client.cache.extract());
-    // console.log('data is good')
-    // console.log(data.posts.nodes)
-    teachers = data.posts.nodes.map((post) => {
-      return {
-        name: post.title,
-        inst: post.teacher.instrument,
-        pic: post.teacher.profilePicture.node.sourceUrl,
-        bio: post.content.replace(/(<([^>]+)>|\n)/gi, ""),
-        exp: post.teacher.experience,
-        education: post.teacher.education,
-      }
-    })
-    // console.log('here are the teachers')
-    // console.log(teachers)
-
-  } catch (error) {
-    console.log(error)
+  // read all files in directory: content/teachers
+  
+  const getFiles = (directory) => {
+    const files = fs.readdirSync(directory)
+    return files.filter(file => file.endsWith('.md'))
   }
+  
+  const contentDirectory = path.join(process.cwd(), 'content/teachers');
+  const markdownFiles = getFiles(contentDirectory)
+  console.log(markdownFiles)
+
+  // Parsing markdown files
+  const teachers = markdownFiles.map(file => {
+    const filePath = path.join(contentDirectory, file)
+    const fileContent = fs.readFileSync(filePath, 'utf8')
+    const { data, content } = matter(fileContent)
+    return { frontMatter: data, content }
+  });
+  console.log(teachers)
 
 
-  const displayTeachers = (t) => {
-    return t.map((teacher) => {
-      return <Teacher key={teacher.name} teacher={teacher}/>
-    })
-  }
+  // const displayTeachers = (t) => {
+  //   return t.map((teacher) => {
+  //     return <Teacher key={teacher.name} teacher={teacher}/>
+  //   })
+  // }
   
   return (
     <div>
@@ -71,7 +41,7 @@ export default async function Teachers() {
         </div>
       </div>
       <section>
-          {displayTeachers(teachers)}
+          {/* {displayTeachers(teachers)} */}
       </section>
       <div className='container bg-purple-100 py-10'>
         <div className='px-20 flex flex-1 flex-col mt-8 text-center'>
