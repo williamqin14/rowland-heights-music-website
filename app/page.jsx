@@ -6,9 +6,9 @@ import Link from 'next/link'
 import { gql } from '@apollo/client'
 
 //images
-import Kids from '/IMG_7172.jpeg'
-import Testimony1 from '/Yelp image 1.jpeg'
-import Testimony2 from '/googleReview1.png'
+import Kids from '../public/IMG_7172.jpeg'
+import Testimony1 from '../public/Yelp-image-1.jpeg'
+import Testimony2 from '../public/googleReview1.png'
 
 
 const GET_TITLE = gql`

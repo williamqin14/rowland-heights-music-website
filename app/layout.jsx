@@ -17,7 +17,7 @@ export const metadata = {
   title: 'Rowland Heights School of Music and Arts',
   description: 'Music lessons in Rowland Heights, CA',
   icons: {
-    icon: '/piano svg.svg',
+    icon: '/piano-svg.svg',
   }
 }
 
