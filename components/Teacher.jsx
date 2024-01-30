@@ -1,0 +1,45 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMusic, faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+
+//fix compatibility issue with nextjs
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+export default function Teacher({ teacher }) {
+  return (
+    <article className="grid gap-6">
+      {/* <header className="wireframe bg-gray-200 h-[3rem]"></header> */}
+      <main className="grid grid-cols-[1fr_minmax(0px,1280px)_1fr] gap-6 gap-y-8">
+        <section className="grid grid-cols-12 col-start-2 gap-4 lg:gap-6 gap-y-8 content-start">
+          <div className="col-span-12 text-4xl mt-12">{teacher.name}</div>
+          <img
+            className="col-span-12 h-[13rem] lg:h-[31rem] w-full object-cover lg:col-span-5 lg:row-span-2"
+            src={teacher.pic}
+            alt="teacher profile picture"
+          />
+          <ul className="text-m xl:text-lg col-span-12 sm:col-span-7 font-bold">
+            <li className="flex items-center">
+              <FontAwesomeIcon icon={faMusic} className='mr-2'/>
+              Instrument : {teacher.inst}
+            </li>
+            <li className="flex items-center">
+              <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+              Experience : {teacher.exp}
+            </li>
+            <li className="flex items-center">
+              <FontAwesomeIcon icon={faGraduationCap} className="mr-1" />
+              Education : {teacher.education}
+            </li>
+          </ul>
+          <div className="text-xl col-span-12 lg:col-span-7">
+            <h4>About</h4>
+            <p>{teacher.bio}</p>
+          </div>
+          
+        </section>
+      </main>
+      <footer className="wireframe h-[3rem]"></footer>
+    </article>
+  );
+}
