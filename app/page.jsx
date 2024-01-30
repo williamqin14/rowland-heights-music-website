@@ -109,7 +109,7 @@ export default async function Home() {
             <ul className='list-disc px-20'>
               <li>Recitals</li>
               <li>Competitions</li>
-              <li>Royal Music Exam (London, U.L.)</li>
+              <li>Royal Music Exam (London, U.K.)</li>
             </ul>
           </div>
         </div>

@@ -106,7 +106,8 @@ export default function ContactUs() {
 
                 <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl">Contact Us!</h1>
 
-                <p className="mt-3 text-gray-500">Interested in joining a class? Please fill out this form for more details.</p>
+                <p className="mt-3 text-gray-500">Interested in joining a class? Ask us about class schedule and course offerings here!</p>
+                {/* <p className="mt-3 text-gray-500">Please fill out this form and we will get back to you shortly!</p> */}
             </div>
 
             <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
