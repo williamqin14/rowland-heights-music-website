@@ -16,10 +16,24 @@ const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Rowland Heights School of Music and Arts',
-  description: 'Music lessons in Rowland Heights, CA',
+  description: 'The Rowland Heights School of Music and Arts offers music lessons in Rowland Heights, California',
+  metadataBase: 'https://rowlandmusicschool.com/',
   icons: {
     icon: '/piano-svg.svg',
-  }
+  },
+  openGraph: { 
+    type: "website", 
+    url: "https://rowlandmusicschool.com/", 
+    title: "Rowland Heights School of Music and Arts", 
+    description: "Music lessons in Rowland Heights, CA", 
+    siteName: "Rowland Heights School of Music and Arts",
+    locale: 'en_US',
+    images: [
+      {
+        url: '../public/piano-svg.svg',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {
