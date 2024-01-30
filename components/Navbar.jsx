@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../public/RHSMA full logo 4.png'
+import Logo from '/RHSMA full logo 4.png'
 import { Spin as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
