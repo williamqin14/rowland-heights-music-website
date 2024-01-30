@@ -30,7 +30,7 @@ export const metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '../public/piano-svg.svg',
+        url: '../public/piano-svg.png',
       },
     ],
   },
