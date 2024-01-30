@@ -22,6 +22,7 @@ const GET_TITLE = gql`
 `
 
 export default async function Home() {
+  console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS)
   return (
     <>
     <main className='items-center'>
