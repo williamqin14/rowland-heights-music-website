@@ -1,9 +1,9 @@
 //components
+import Head from 'next/head'
 
 //libraries 
 import Image from 'next/image'
 import Link from 'next/link'
-import { gql } from '@apollo/client'
 
 //images
 import Kids from '../public/IMG_7172.jpeg'
@@ -11,23 +11,26 @@ import Testimony1 from '../public/Yelp-image-1.jpeg'
 import Testimony2 from '../public/googleReview1.png'
 
 
-const GET_TITLE = gql`
-  query NewQuery {
-    posts {
-      nodes {
-        title
-      }
-    }
-  }
-`
+// const GET_TITLE = gql`
+//   query NewQuery {
+//     posts {
+//       nodes {
+//         title
+//       }
+//     }
+//   }
+// `
 
 export default async function Home() {
 
   return (
     <>
+    <Head>
+      <link rel="preload" href="../public/siniz-kim-LZ3O2Q4Me0Q-unsplash.jpg" as="image" />
+    </Head>
     <main className='items-center'>
       <div className='w-full'>
-        <div className='bg-hero flex justify-center'>
+        <div className='bg-hero flex justify-center' style={{backgroundImage: "url('/siniz-kim-LZ3O2Q4Me0Q-unsplash.jpg')"}}>
           <div className='flex flex-col justify-center items-center'>
             <div className='bg-text text-white p-3'>
               <h1 className='text-7xl'>Music Lessons In Rowland Heights</h1>

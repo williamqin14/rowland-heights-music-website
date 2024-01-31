@@ -1,6 +1,6 @@
 import './globals.css'
-import '@wordpress/block-library/build-style/style.css' 
-import '@wordpress/block-library/build-style/theme.css'
+// import '@wordpress/block-library/build-style/style.css' 
+// import '@wordpress/block-library/build-style/theme.css'
 import { Open_Sans } from 'next/font/google'
 
 // libraries

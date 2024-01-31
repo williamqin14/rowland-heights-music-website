@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex justify-between items-center p-2 pb-1 bg-gray-900 text-white w-full">
+    <nav className="flex justify-between items-center p-2 pb-1 bg-gray-900 text-white w-full max-h-[80px]">
       <div>
         <Link href="/" onClick={() => setIcon(false)}>
           <Image
