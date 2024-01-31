@@ -103,7 +103,7 @@ export default async function Home() {
                 <li>Drums</li>
                 <li>Accordion</li>
                 <Link href='/classes'>
-                  <li>and More...</li>
+                  <li className='hover:text-blue-700'>and More...</li>
                 </Link>
               </ul>
             </div>
