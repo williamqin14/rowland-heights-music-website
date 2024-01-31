@@ -102,7 +102,9 @@ export default async function Home() {
                 <li>Guitar</li>
                 <li>Drums</li>
                 <li>Accordion</li>
-                <li>and More...</li>
+                <Link href='/classes'>
+                  <li>and More...</li>
+                </Link>
               </ul>
             </div>
           </div>
