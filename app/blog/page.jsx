@@ -21,9 +21,9 @@ export default class Blog extends Component {
         </div>
 
         {/* Posts */}
-        <article className='container flex-col text-center'>
+        {/* <article className='container flex-col text-center'>
           <h1 className='font-bold'>{title}</h1>
-          <HomeContent/>
+          <HomeContent/> */}
           {/* <ul className='pt-3'>
             {cats.map((cat, k) => (
                 <li key={k} className='pb-3'>
@@ -32,7 +32,8 @@ export default class Blog extends Component {
               </li>
             ))}
           </ul> */}
-        </article>
+        {/* </article> */}
+        <h1 className='font-bold text-center py-10 pb-20'>Coming Soon!</h1>
 
 
         <div className='container bg-purple-100 py-10'>

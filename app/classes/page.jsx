@@ -1,12 +1,36 @@
-'use client'
 import Head from "next/head"
-import { Component } from 'react'
-import { attributes, react as HomeContent } from '../../content/home.md'
 import Link from 'next/link'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import Class from '../../components/Class'
 
-export default class Blog extends Component {
-  render() {
-    let { title, cats } = attributes
+export default async function Classes() {
+    // read all files in directory: content/teachers
+
+    const getFiles = (directory) => {
+      const files = fs.readdirSync(directory)
+      return files.filter(file => file.endsWith('.md'))
+    }
+    
+    const markdownFiles = getFiles('content/schedules')
+    console.log(markdownFiles)
+
+    // // Parsing markdown files
+    const classes = markdownFiles.map(file => {
+      const filePath = path.join('content/schedules', file)
+      const fileContent = fs.readFileSync(filePath, 'utf8')
+      return matter(fileContent).data
+    })
+    console.log(classes)
+
+
+    const displayClasses = (t) => {
+      return t.map((data) => {
+        return <Class key={data.class_title} prop={data}/>
+      })
+    }
+
     return (
         <>
         <Head>
@@ -14,20 +38,18 @@ export default class Blog extends Component {
         </Head>
 
         <div className='container'>
-            <div className='px-20 flex flex-col text-center'>
-            <strong className='text-3xl pb-4 italic'>Our Classes</strong>
-            <p className='text-lg text-gray-800'>Located close to the Rowland Heights High School, Rowland Heights School of Music of Arts (RHSMA) is a family oriented school. Our goal is to provide the best teaching and services to develop talents of all ages, in an atmosphere of respect, love, and friendship. As we continue to grow, our vision is to further help new students discover and develop their musical and artists talents.</p>
+            <div className='px-20 flex flex-col text-center flex-1 bg-purple-100 py-10'>
+            <strong className='text-3xl pb-4 italic'>Class Schedules</strong>
+            <p className='text-lg text-gray-800'>Our current schedules for the Winter and Spring Terms are listed here!</p>
             </div>
         </div>
 
         {/* Schedules */}
-        <section className='container flex-col text-center'>
-            <div>Class</div>
-            <div>Class</div>
-            <div>Class</div>
-            <div>Class</div>
-            <div>Class</div>
+        <section className='container flex-col'>
+            {displayClasses(classes)}
         </section>
+
+        <div className="wireframe h-[3rem]"></div>
 
         <div className='container bg-purple-100 py-10'>
             <div className='px-20 flex flex-1 flex-col mt-8 text-center'>
@@ -44,5 +66,4 @@ export default class Blog extends Component {
         </div>
       </>
     )
-  }
 }

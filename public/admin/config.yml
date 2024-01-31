@@ -2,9 +2,9 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
   commit_messages:
-    create: Decap CMS - Create {{collection}} “{{slug}}”
-    update: Decap CMS - Update {{collection}} “{{slug}}”
-    delete: Decap CMS - Delete {{collection}} “{{slug}}”
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
@@ -46,8 +46,8 @@ collections:
     delete: true
     fields:
       - {label: "Teacher Name", name: "teacher_name", widget: "string"}
-      # - {label: "Instrument", name: "instrument", widget: "string"}
-      # - {label: "Years of Experience", name: "years_of_experience", widget: "string"}
-      # - {label: "Profile Picture", name: "profile_picture", widget: "image"}
-      # - {label: "About", name: "about", widget: "markdown"}
+      - {label: "Instrument", name: "instrument", widget: "string"}
+      - {label: "Years of Experience", name: "years_of_experience", widget: "string"}
+      - {label: "Profile Picture", name: "profile_picture", widget: "image"}
+      - {label: "About", name: "about", widget: "markdown"}
  
