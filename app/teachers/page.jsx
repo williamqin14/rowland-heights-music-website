@@ -18,7 +18,6 @@ export default async function Teachers() {
   const teachers = markdownFiles.map(file => {
     const filePath = path.join('content/teachers', file)
     const fileContent = fs.readFileSync(filePath, 'utf8')
-    const { data, content } = matter(fileContent)
     return matter(fileContent).data
   })
 

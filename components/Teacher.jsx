@@ -29,7 +29,7 @@ export default function Teacher({ prop }) {
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon icon={faGraduationCap} className="mr-1" />
-              {/* Education : {teacher.education} */}
+              Education : {prop.education}
             </li>
           </ul>
           <div className="text-xl col-span-12 lg:col-span-7">
