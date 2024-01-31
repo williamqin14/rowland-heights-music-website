@@ -22,41 +22,41 @@ collections:
     create: true
     delete: true
     fields: 
-      - {label: "Class Title", name: "class_title", widget: "string"}
-      - {label: "Class Description", name: "class_description", widget: "markdown"}
+      - {label: "Class Title", name: "class_title", widget: "string", default: "TBA"}
+      - {label: "Class Description", name: "class_description", widget: "markdown", default: "TBA"}
       - label: "Classes"
         name: "classes"
         widget: list
         fields:
-          - { label: "Level", name: "level", widget: "string"}
-          - { label: "Ages", name: "ages", widget: "string"}
-          - { label: "Day", name: "day", widget: "string"}
-          - { label: "Day Range", name: "day_range", widget: "string"}
-          - { label: "Time Range", name: "time_range", widget: "string"}
-      - {label: "Class fee", name: "class_fee", widget: "string"}
-      - {label: "Material fee", name: "material_fee", widget: "string"}
-      - {label: "Instructor", name: "instructor", widget: "string"}
-      - {label: "Additional Info", name: "additional_info", widget: "markdown"}
+          - { label: "Level", name: "level", widget: "string", default: "TBA"}
+          - { label: "Ages", name: "ages", widget: "string", default: "TBA"}
+          - { label: "Day", name: "day", widget: "string", default: "TBA"}
+          - { label: "Day Range", name: "day_range", widget: "string", default: "TBA"}
+          - { label: "Time Range", name: "time_range", widget: "string", default: "TBA"}
+      - {label: "Class fee", name: "class_fee", widget: "string", default: "TBA"}
+      - {label: "Material fee", name: "material_fee", widget: "string", default: "TBA"}
+      - {label: "Instructor", name: "instructor", widget: "string", default: "TBA"}
+      - {label: "Additional Info", name: "additional_info", widget: "markdown", default: "TBA"}
   - name: "blogs"
     label: "Blog Posts"
     folder: "content/blogs"
     create: true
     delete: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", default: "TBA"}
+      - {label: "Author", name: "author", widget: "string", default: "TBA"}
       - {label: "Date", name: "date", widget: "datetime", date_format: "MM.DD.YYYY", time_format: false }
-      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Content", name: "content", widget: "markdown", default: "TBA"}
   - name: "teachers"
     label: "Teachers"
     folder: "content/teachers"
     create: true
     delete: true
     fields:
-      - {label: "Teacher Name", name: "teacher_name", widget: "string"}
-      - {label: "Instrument", name: "instrument", widget: "string"}
-      - {label: "Years of Experience", name: "years_of_experience", widget: "string"}
-      - {label: "Education", name: "education", widget: "string"}
+      - {label: "Teacher Name", name: "teacher_name", widget: "string", default: "TBA"}
+      - {label: "Instrument", name: "instrument", widget: "string", default: "TBA"}
+      - {label: "Years of Experience", name: "years_of_experience", widget: "string", default: "TBA"}
+      - {label: "Education", name: "education", widget: "string", default: "TBA"}
       - {label: "Profile Picture", name: "profile_picture", widget: "image"}
-      - {label: "About", name: "about", widget: "markdown"}
+      - {label: "About", name: "about", widget: "markdown", default: "TBA"}
  
