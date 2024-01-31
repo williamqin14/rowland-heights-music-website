@@ -16,9 +16,9 @@ media_library:
     cloud_name: delhic5ro
     api_key: 365767996349851
 collections:
-  - name: "schedules"
-    label: "Schedules"
-    folder: "content/schedules"
+  - name: "classes"
+    label: "Classes"
+    folder: "content/classes"
     create: true
     delete: true
     fields: 
