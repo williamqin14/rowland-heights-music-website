@@ -2,14 +2,19 @@ backend:
   name: test-repo
   branch: main # Branch to update (optional; defaults to master)
   commit_messages:
-    create: Create {{collection}} “{{slug}}”
-    update: Update {{collection}} “{{slug}}”
-    delete: Delete {{collection}} “{{slug}}”
+    create: Decap CMS - Create {{collection}} “{{slug}}”
+    update: Decap CMS - Update {{collection}} “{{slug}}”
+    delete: Decap CMS - Delete {{collection}} “{{slug}}”
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
 media_folder: public/img
 public_folder: img
+media_library: 
+  name: cloudinary
+  config:
+    cloud_name: delhic5ro
+    api_key: 365767996349851
 collections:
   - name: "schedules"
     label: "Schedules"
