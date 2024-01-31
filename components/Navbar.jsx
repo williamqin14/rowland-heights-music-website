@@ -29,6 +29,7 @@ export default function Navbar() {
             alt="Rowland Heights Music School logo"
             height={250}
             width={250}
+            className='max-h-[80px]'
             />
         </Link>
       </div>
