@@ -2,6 +2,7 @@
 teacher_name: Yolanda J. Fresnoza, Ed.D.
 instrument: Piano
 years_of_experience: Many years
+education: TBA
 profile_picture: https://res.cloudinary.com/delhic5ro/image/upload/v1706660033/rowland_heights_window_gvw6po.jpg
 about: >-
   Dr. Yolanda J. Fresnoza graduated with a Doctorate Degree in Educational
