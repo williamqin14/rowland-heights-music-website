@@ -1,6 +1,6 @@
 This is a Next.js website created for the [Rowland Heights School of Music and Arts](https://rowlandmusicschool.com/).
 
-## Interesting Things About This Project:
+## Interesting Things About This Project
 * Originally configured to work with Wordpress CMS + graphql, but scrapped due to free version of wordpress.com not offering plugin support
 * Is a git-based CMS setup rather than API-based setup, meaning all editable content is stored in github repository. See /content folder
 * Maintenance free, client can edit all content using Decap CMS
