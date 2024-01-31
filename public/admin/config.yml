@@ -24,7 +24,15 @@ collections:
     fields: 
       - {label: "Class Title", name: "class_title", widget: "string"}
       - {label: "Class Description", name: "class_description", widget: "markdown"}
-      - {label: "Schedules", name: "schedules", widget: "markdown"}
+      - label: "Classes"
+        name: "classes"
+        widget: list
+        fields:
+          - { label: "Level", name: "level", widget: "string"}
+          - { label: "Ages", name: "ages", widget: "string"}
+          - { label: "Day", name: "day", widget: "string"}
+          - { label: "Day Range", name: "day_range", widget: "string"}
+          - { label: "Time Range", name: "time_range", widget: "string"}
       - {label: "Class fee", name: "class_fee", widget: "string"}
       - {label: "Material fee", name: "material_fee", widget: "string"}
       - {label: "Instructor", name: "instructor", widget: "string"}
