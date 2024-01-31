@@ -37,8 +37,8 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-4">
         <Link href="/" className='nav-link cursor-pointer'>Home</Link>
         <Link href="/teachers" className='nav-link cursor-pointer'>Teachers</Link>
-        {/* <Link href="/gallery">Gallery</Link> */}
-        {/* <Link href="/blog">Blog</Link> */}
+        <Link href="/classes">Classes</Link>
+        <Link href="/blog">Blog</Link>
         <Link href="/contact-us">
           <button className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
             Contact Us
@@ -64,7 +64,13 @@ export default function Navbar() {
               <Link href='/' onClick={handleSmallerScreensNavigation} className='hover:text-blue-500 cursor-pointer'>Home</Link>
             </li>
             <li className='py-5'>
-              <Link href='/teachers' onClick={handleSmallerScreensNavigation} className='hover:text-blue-500 cursor-pointer'>Teacher</Link>
+              <Link href='/teachers' onClick={handleSmallerScreensNavigation} className='hover:text-blue-500 cursor-pointer'>Teachers</Link>
+            </li>
+            <li className='py-5'>
+              <Link href='/classes' onClick={handleSmallerScreensNavigation} className='hover:text-blue-500 cursor-pointer'>Classes</Link>
+            </li>
+            <li className='py-5'>
+              <Link href='/blog' onClick={handleSmallerScreensNavigation} className='hover:text-blue-500 cursor-pointer'>Blog</Link>
             </li>
           </ul>
 

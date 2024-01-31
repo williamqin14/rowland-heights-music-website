@@ -15,25 +15,19 @@ export default class Blog extends Component {
 
         <div className='container'>
             <div className='px-20 flex flex-col text-center'>
-            <strong className='text-3xl pb-4 italic'>Our Blog</strong>
+            <strong className='text-3xl pb-4 italic'>Our Classes</strong>
             <p className='text-lg text-gray-800'>Located close to the Rowland Heights High School, Rowland Heights School of Music of Arts (RHSMA) is a family oriented school. Our goal is to provide the best teaching and services to develop talents of all ages, in an atmosphere of respect, love, and friendship. As we continue to grow, our vision is to further help new students discover and develop their musical and artists talents.</p>
             </div>
         </div>
 
-        {/* Posts */}
-        <article className='container flex-col text-center'>
-          <h1 className='font-bold'>{title}</h1>
-          <HomeContent/>
-          {/* <ul className='pt-3'>
-            {cats.map((cat, k) => (
-                <li key={k} className='pb-3'>
-                <h3 className='p-0'>{cat.name}</h3>
-                <p>{cat.description}</p>
-              </li>
-            ))}
-          </ul> */}
-        </article>
-
+        {/* Schedules */}
+        <section className='container flex-col text-center'>
+            <div>Class</div>
+            <div>Class</div>
+            <div>Class</div>
+            <div>Class</div>
+            <div>Class</div>
+        </section>
 
         <div className='container bg-purple-100 py-10'>
             <div className='px-20 flex flex-1 flex-col mt-8 text-center'>

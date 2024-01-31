@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
     ],
+    unoptimized: true,
   },
   webpack: (cfg) => {
     cfg.module.rules.push(
