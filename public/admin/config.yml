@@ -23,7 +23,7 @@ collections:
     delete: true
     fields: 
       - {label: "Class Title", name: "class_title", widget: "string"}
-      - {label: "Class Description", name: "class_description", widget: "string"}
+      - {label: "Class Description", name: "class_description", widget: "markdown"}
       - {label: "Schedules", name: "schedules", widget: "markdown"}
       - {label: "Class fee", name: "class_fee", widget: "string"}
       - {label: "Material fee", name: "material_fee", widget: "string"}
