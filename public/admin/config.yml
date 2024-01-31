@@ -48,6 +48,7 @@ collections:
       - {label: "Teacher Name", name: "teacher_name", widget: "string"}
       - {label: "Instrument", name: "instrument", widget: "string"}
       - {label: "Years of Experience", name: "years_of_experience", widget: "string"}
+      - {label: "Education", name: "education", widget: "string"}
       - {label: "Profile Picture", name: "profile_picture", widget: "image"}
       - {label: "About", name: "about", widget: "markdown"}
  
