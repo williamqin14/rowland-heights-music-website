@@ -5,5 +5,4 @@ This is a Next.js website created for the [Rowland Heights School of Music and A
 * Maintenance free, client can edit all content using Decap CMS
 * Uses Cloudinary to outsource image storage, saving space and build time
 * Only costs **$5/year** to run instead of **$100+/year**, just have to pay for domain 😎
-* Logo designed using Photoshop and Illustrator
-* Fully responsive on mobile and desktop
+* Fully responsive
