@@ -27,7 +27,7 @@ class_fee: $160
 material_fee: $28 due first class meeting.
 instructor: Yolanda J. Fresnoza, Ed. D.
 additional_info: >-
-  * **You will need your own oersonal set of headphones with large prong
+  * **You will need your own personal set of headphones with large prong
   adapter.**
 
   * You can purchase at: Best Buy or Target
