@@ -1,3 +1,0 @@
----
-teacher_name: will
----
