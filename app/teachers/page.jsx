@@ -7,23 +7,23 @@ import matter from 'gray-matter'
 export default async function Teachers() {
   // read all files in directory: content/teachers
   
-  const getFiles = (directory) => {
-    const files = fs.readdirSync(directory)
-    return files.filter(file => file.endsWith('.md'))
-  }
+  // const getFiles = (directory) => {
+  //   const files = fs.readdirSync(directory)
+  //   return files.filter(file => file.endsWith('.md'))
+  // }
   
-  const contentDirectory = path.join(process.cwd(), 'content/teachers');
-  const markdownFiles = getFiles(contentDirectory)
-  console.log(markdownFiles)
+  // const contentDirectory = path.join(process.cwd(), 'content/teachers');
+  // const markdownFiles = getFiles(contentDirectory)
+  // console.log(markdownFiles)
 
-  // Parsing markdown files
-  const teachers = markdownFiles.map(file => {
-    const filePath = path.join(contentDirectory, file)
-    const fileContent = fs.readFileSync(filePath, 'utf8')
-    const { data, content } = matter(fileContent)
-    return { frontMatter: data, content }
-  });
-  console.log(teachers)
+  // // Parsing markdown files
+  // const teachers = markdownFiles.map(file => {
+  //   const filePath = path.join(contentDirectory, file)
+  //   const fileContent = fs.readFileSync(filePath, 'utf8')
+  //   const { data, content } = matter(fileContent)
+  //   return { frontMatter: data, content }
+  // });
+  // console.log(teachers)
 
 
   // const displayTeachers = (t) => {
