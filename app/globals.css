@@ -80,6 +80,7 @@ html {
 }
 
 .bg-hero {
+    background-image: url('../public/siniz-kim-LZ3O2Q4Me0Q-unsplash.jpg');
     background-blend-mode: multiply; 
     background-color: #adabae;
     background-repeat: no-repeat;
