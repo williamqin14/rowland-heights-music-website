@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
   commit_messages:
     create: Decap CMS - Create {{collection}} “{{slug}}”
