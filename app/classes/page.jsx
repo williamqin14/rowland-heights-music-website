@@ -33,7 +33,7 @@ export default async function Classes() {
         <div className='container'>
             <div className='px-20 flex flex-col text-center flex-1 bg-purple-100 py-10'>
             <strong className='text-3xl pb-4 italic'>Class Schedules</strong>
-            <p className='text-lg text-gray-800'>Our current schedules for the Winter and Spring Terms are listed here!</p>
+            <p className='text-lg text-gray-800'>Our current schedules for school terms are listed here!</p>
             </div>
         </div>
 
