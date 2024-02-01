@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className={menuIcon ? 
         'md:hidden absolute top-[80px] right-0 flex justify-center items-center w-full h-[350px] bg-gray-900 text-white ease-in duration-250'
         :
-        'md:hidden absolute top-[-100%] right-0 flex justify-center items-center w-full h-[350px] bg-gray-900 text-white text-center ease-in duration-250'
+        'md:hidden absolute top-[-100%] right-0 flex justify-center items-center w-full h-[350px] bg-gray-900 text-white text-center ease-in duration-250 mb-[80px]'
       }>
         <div className='w-full'>
           
