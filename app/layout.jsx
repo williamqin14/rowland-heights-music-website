@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <link rel="preload" href="../public/siniz-kim-LZ3O2Q4Me0Q-unsplash.webp" as="image" />
       <body className={openSans.className}>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
             <GoogleAnalytics ga_id= 
