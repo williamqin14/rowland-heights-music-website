@@ -25,6 +25,7 @@ export default async function Home() {
 
   return (
     <>
+    <link rel="preload" href="../public/siniz-kim-LZ3O2Q4Me0Q-unsplash.webp" as="image" />
     <main className='items-center'>
       <div className='w-full'>
         <div className='bg-hero flex justify-center'>
