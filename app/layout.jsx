@@ -7,6 +7,7 @@ import { Open_Sans } from 'next/font/google'
 // import { client } from '../lib/Apollo'
 
 // components
+import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import GoogleAnalytics from '../components/GoogleAnalytics'
@@ -40,6 +41,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <Head>
+        <link rel="preload" href="../public/siniz-kim-LZ3O2Q4Me0Q-unsplash.webp" as="image" />
+      </Head>
       <body className={openSans.className}>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
             <GoogleAnalytics ga_id= 
