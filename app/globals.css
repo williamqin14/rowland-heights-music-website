@@ -80,7 +80,7 @@ html {
 }
 
 .bg-hero {
-    background-image: url('../public/siniz-kim-LZ3O2Q4Me0Q-unsplash.webp');
+    background-image: url('https://res.cloudinary.com/delhic5ro/image/upload/f_auto,q_auto/ysig8nzr0mtzlqah4jnj');
     background-blend-mode: multiply; 
     background-color: #adabae;
     background-repeat: no-repeat;
